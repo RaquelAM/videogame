@@ -141,10 +141,20 @@ function checkCollition(){
 addEventListener('keydown', function(event){
   console.log(event.keyCode)
   if (event.keyCode === 37){
-    mario.x -= 64
+    if(mario.x <= 0){
+      mario.x = 0
+    }else{
+      mario.x -= 64
+    }
+
   }
   if (event.keyCode === 39){
-    mario.x += 64
+    if(mario.x >= 448){
+      mario.x = 448
+    }else{
+      mario.x += 64
+    }
+
   }
 })
 
