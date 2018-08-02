@@ -3,12 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>Mi juego</title>
+    <style type="text/css">
+      #container{
+        width: 512px;
+        position: relative;
+      }
+      #start{
+        width: 20%;
+        height: 10%;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        font-size: 25px;
+      }
+    </style>
   </head>
   <body>
     <h1>Juegoo</h1>
-    <canvas id="canvas" width="512" height="512">
-
-    </canvas>
+    <div id="container">
+      <button id="start" onclick="start()">Start</button>
+      <canvas id="canvas" width="512" height="512">
+      </canvas>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

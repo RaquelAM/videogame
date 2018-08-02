@@ -104,6 +104,7 @@ function update(){
 }
 
 function start(){
+  document.getElementById("start").style.display = "none";
   intervalo = setInterval(update, 1000/60)
 }
 
@@ -158,4 +159,4 @@ addEventListener('keydown', function(event){
   }
 })
 
-start()
+
