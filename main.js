@@ -87,7 +87,7 @@ function Enemy(x){
 //instancias
 var board = new Background()
 var mario = new Mario()
-var enemy = new Enemy(20)
+//var enemy = new Enemy(20)
 //instancias
 
 //main functions
@@ -96,7 +96,6 @@ function update(){
   ctx.clearRect(0,0,canvas.width, canvas.height)
   board.draw()
   mario.draw()
-  enemy.draw()
   generarEnemigo()
   drawEnemies()
   checkCollition()
