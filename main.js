@@ -29,6 +29,7 @@ var fondo = "https://bit.ly/2LA87TH"
 var intervalo
 var enemies = []
 var frames = 0
+var time = 0
 //constructores
 function Background(){
     this.x = 0
@@ -99,6 +100,7 @@ function update(){
   generarEnemigo()
   drawEnemies()
   checkCollition()
+  timer()
   //console.log("lala")
 }
 
@@ -112,6 +114,7 @@ function gameOver(){
   ctx.font = "50px Avenir"
   ctx.fillStyle = "white"
   ctx.fillText("Game Over", 100,100 )
+  ctx.fillText("Tu tiempo fue de "+time+"seg", 10,150 )
 }
 
 //aux functions
@@ -135,6 +138,11 @@ function checkCollition(){
           gameOver()
       }
     })
+}
+
+function timer(){
+  time++
+  document.getElementById("time").innerHTML = time
 }
 
 //listeners

@@ -7,6 +7,7 @@
       #container{
         width: 512px;
         position: relative;
+        display: inline-block;
       }
       #start{
         width: 20%;
@@ -16,6 +17,11 @@
         left: 40%;
         font-size: 25px;
       }
+      #timeCont{
+        width: 200px;
+        height: 512px;
+        display: inline-block;
+      }
     </style>
   </head>
   <body>
@@ -24,6 +30,9 @@
       <button id="start" onclick="start()">Start</button>
       <canvas id="canvas" width="512" height="512">
       </canvas>
+    </div>
+    <div id="timeCont">
+      <span id="time"></span> seg
     </div>
     <script src="main.js"></script>
   </body>
