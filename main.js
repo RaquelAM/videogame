@@ -25,7 +25,7 @@ var ctx = canvas.getContext("2d")
 
 //variables
 var frames = 0
-var fondo = "https://bit.ly/2LA87TH"
+var fondo = "grass.jpg"
 var intervalo
 var enemies = []
 var frames = 0
@@ -74,7 +74,7 @@ function Enemy(x){
   this.width = 50
   this.height = 50
   this.imagen = new Image()
-  this.imagen.src = "https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_77b05ce5bdfb069e316ba875cb672888.png"
+  this.imagen.src = "enemy.png"
   this.imagen.onload = function(){
       this.draw()
   }.bind(this)
